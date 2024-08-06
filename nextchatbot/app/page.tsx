@@ -1,19 +1,17 @@
 import Image from "next/image";
-import Logo from "@/components/Logo"
+import HeaderBar from "@/components/HeaderBar";
 import { Button } from "@/components/ui/button";
 export default function Home() {
   return (
-    <main className="flex flex-col w-screen h-screen bg-backgroundDarkBase">
-      <header className="flex items-center justify-center sm:justify-start">
-        <Logo />
-      </header>
+    <main className="flex flex-col w-screen h-screen bg-backgroundDarkBase overflow-y-auto bg-gradient-to-b from-backgroundDarkBase from-15% to-backgroundBlueGrad2 to-100%  sm:bg-gradient-to-br  sm:from-40%">
+      <HeaderBar/>
       <section className="flex flex-col justify-center align-middle px-6">
-        <h1 className="jost-title text-left sm:text-center text-3xl py-4 leading-10 sm:text-4xl sm:leading-10 font-black">
+        <h1 className="jost-title text-left sm:text-center text-3xl py-4 leading-10 sm:text-6xl font-black sm:pt-16">
           Your new AI <br />
           Companion is <br />
           here. <br />  
         </h1>
-        <p className="jost-para text-left sm:text-center text-sm py-6 sm:text-base font-thin">
+        <p className="jost-para text-left sm:text-center text-sm py-6 sm:text-base font-thin pb-20 sm:px-64">
           Welcome to NextChat, your always-on chat companion. 
           Whether you need a quick answer, a thoughtful conversation,
           or just someone to listen, we're here for you 24/7. 
@@ -24,11 +22,15 @@ export default function Home() {
           you choose.
         </p>
         <div className="flex justify-center items-center py-5">
-          <Button className="max-w-32 rounded-full bg-backgroundBlueGrad py-8 px-20">
-            <p className=" font-bold text-lg">Chat Now</p>
+          <Button className="max-w-32 rounded-full shadow-2xl bg-backgroundBlueGrad py-8 px-20">
+            <p className=" font-bold text-xl">Chat Now</p>
           </Button>
         </div>
-        <div className="flex justify-center items-center py-5"><Button className="max-w-32 rounded-full bg-backgroundBlueGrad">About</Button></div>
+        <div className="flex justify-center items-center pt-5 pb-8 sm:hidden">
+          <Button className="shadow-2xl max-w-32 rounded-full bg-backgroundBlueGrad px-8 py-6">
+            <p className=" font-semibold">About</p>
+          </Button>
+          </div>
       </section>
     </main>
   );

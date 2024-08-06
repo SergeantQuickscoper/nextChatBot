@@ -21,6 +21,9 @@ const config = {
       colors: {
         backgroundDarkBase: "#161313",
         backgroundBlueGrad: "#009FDF",
+        backgroundBlueGrad2: "#016A96",
+        buttonGrad1: "#00AAF0",
+        buttonGrad2: "#055778",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
