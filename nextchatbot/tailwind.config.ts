@@ -24,6 +24,8 @@ const config = {
         backgroundBlueGrad2: "#016A96",
         buttonGrad1: "#00AAF0",
         buttonGrad2: "#055778",
+        textBox: "#2F2E2E",
+        textBoxText: "#D9D9D9",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
