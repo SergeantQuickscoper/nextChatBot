@@ -22,6 +22,7 @@ const config = {
         backgroundDarkBase: "#161313",
         backgroundBlueGrad: "#009FDF",
         backgroundBlueGrad2: "#016A96",
+        chatBubbleBG: "#00AAF0",
         buttonGrad1: "#00AAF0",
         buttonGrad2: "#055778",
         textBox: "#2F2E2E",

@@ -76,3 +76,7 @@ h1{
 p{
     color:#fff
 }
+
+.plsWork{
+  max-height: inherit;
+}

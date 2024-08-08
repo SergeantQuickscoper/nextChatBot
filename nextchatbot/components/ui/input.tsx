@@ -23,7 +23,7 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
         {...props}
         onChange={inputLogger}
         />
-        <button className="pr-2">
+        <button className="pr-2" onClick={sendMessage}>
             <img className=' max-w-8'src="/SendIcon.svg"/>
         </button>
       </div>
