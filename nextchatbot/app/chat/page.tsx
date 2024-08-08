@@ -3,7 +3,7 @@ import ChatSpace from "@/components/ChatSpace"
 
 export default function Chat(){
     return(
-        <main className="max-h-screen bg-backgroundDarkBase flex flex-col w-screen h-screen">
+        <main className= "bg-backgroundDarkBase flex flex-col w-screen h-screen overflow-auto">
             <HeaderLogoOnly />
             <div className="h-full w-full items-center flex justify-center">
                 <ChatSpace />

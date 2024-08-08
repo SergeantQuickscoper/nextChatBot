@@ -29,15 +29,23 @@ const ChatSpace = () => {
     }
 
     return(
-        <div className="w-8/12 h-full max-h-full flex flex-col align-middle items-center justify-between sm:w-6/12">
-            <div className="plsWork h-full w-full overflow-auto">
-                {chats.map((chat) => <ChatBubble textMessage={chat.message} /> )} 
+        <div className="flex flex-col h-full w-full items-center">
+            <div className="middle w-8/12 h-full flex flex-col align-middle items-center justify-between sm:w-6/12 pb-5">
+                <div className="h-full w-full overflow-auto max-h-[75vh]">
+                    {chats.map((chat) => <ChatBubble textMessage={chat.message} /> )} 
+                </div>
+            </div>
+            <div className="footer w-8/12">
+                <Input className="w-full" inputLogger={inputLogger} sendMessage={sendMessage}/>
             </div>
             
-            <Input className="w-full" inputLogger={inputLogger} sendMessage={sendMessage}/>
             
             
         </div>
+        
+        
+        
+        
     )
 }
 
