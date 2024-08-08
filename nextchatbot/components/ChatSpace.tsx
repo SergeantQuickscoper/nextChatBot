@@ -19,13 +19,17 @@ const ChatSpace = () => {
         text = event.target.value;
     }
 
-    const sendMessage = () => {
-        if (text !== ""){
-            console.log("Event fired!", text)
-            addChats((chats) => [...chats, {key: chats.length, message:text}])
-            
+    const sendMessage = (event:any) => {
+        if(event.key === "Enter" || event.button === 0)
+        {
+            event.target.value = "";
+
+            if (text !== ""){
+                console.log("Event fired!", text)
+                addChats((chats) => [...chats, {key: chats.length, message:text}])
+                
+            }
         }
-        
     }
 
     return(
