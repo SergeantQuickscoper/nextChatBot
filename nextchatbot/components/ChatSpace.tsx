@@ -55,7 +55,7 @@ const ChatSpace = (props:any) => {
         <div className="flex flex-col h-full w-full items-center">
             <div className="middle w-9/12 h-full flex flex-col items-center justify-between sm:w-6/12 pb-5">
                 <div className="h-full w-full max-h-[75vh] flex flex-col-reverse overflow-auto">
-                    {chats.toReversed().map((chat) => <ChatBubble textMessage={chat.message} type={chat.type}/> )}
+                    {chats.toReversed().map((chat) => <ChatBubble textMessage={chat.message} type={chat.type} key={chat.key}/> )}
                     <div className="h-[1px]"></div> 
                 </div>
             </div>

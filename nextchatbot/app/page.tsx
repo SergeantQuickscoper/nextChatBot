@@ -16,7 +16,7 @@ export default function Home() {
         <p className="jost-para text-left sm:text-center text-sm py-6 sm:text-base font-thin pb-20 sm:px-64">
           Welcome to NextChat, your always-on chat companion. 
           Whether you need a quick answer, a thoughtful conversation,
-          or just someone to listen, we're here for you 24/7. 
+          or just someone to listen, we&apos;re here for you 24/7. 
           Our AI is designed to understand and engage, providing 
           support and interaction whenever you need it. 
           Experience the convenience of having a reliable, friendly 
