@@ -7,8 +7,10 @@ The contents of this README include:
 # Screenshots
 ![enter image description here](nextchatbot/public/homeSS.png)
 ![enter image description here](nextchatbot/public/chatSS1.png)
-![enter image description here](nextchatbot/public/homeSSphone.png)
-![enter image description here](nextchatbot/public/chatSSphone.png)
+<div> 
+<img src="nextchatbot/public/homeSSphone.png" alt="drawing" width=50%/>
+<img src="nextchatbot/public/chatSSphone.png" alt="drawing" width=50%/>
+</div>
 # Running the application yourself
 To run Next Chat on your local machine you will need a GroqAPI Key, which if you don't have can get at https://console.groq.com/keys
 
